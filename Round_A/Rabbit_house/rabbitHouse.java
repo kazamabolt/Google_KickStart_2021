@@ -55,7 +55,6 @@ public class rabbitHouse {
 						if (nRow > 0 && nRow <= R && nCol > 0 && nCol <= C) {
 							if (houses[nRow][nCol] >= topHeight - 1) continue;
 							else {
-								// nRow, nCol 좌표의 기존 높이를 hm에서 삭제한다.
 								ArrayList<Point> list3 = hm.get(houses[nRow][nCol]);
 								for(int m = 0; m < list3.size(); m++) {
 									if(list3.get(m).row == nRow && list3.get(m).col == nCol) {
